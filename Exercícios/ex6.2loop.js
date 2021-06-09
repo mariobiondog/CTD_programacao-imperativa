@@ -1,5 +1,3 @@
-/*
-
 // 1
 
 const pontos = [12, 34, 56, 34, 5, 8, 76, 4, 1, 90];
@@ -16,7 +14,7 @@ for (let i = 0; i < pontos2.length; i++) {
   console.log(pontos2[i]);
 }
 
-// 3.1 - passando arr
+// 3
 
 function mudaValor(arr) {
   arr[i] = "chocolate";
@@ -30,8 +28,6 @@ for (var i = 0; i < pontos2.length; i++) {
   mudaValor(pontos2);
   mostraValor(pontos2);
 }
-
-*/
 
 // EXTRA 1
 
