@@ -26,3 +26,21 @@ const acaoCarro = (callback) => callback();
 
 acaoCarro(andar);
 acaoCarro(parar);
+
+// ARROW PARÂMETROS
+
+const fizzBuzz = (n1, n2) => {
+  let n = parseInt(Math.random() * 100);
+  console.log(n);
+  if (n % n1 === 0 && n % n2 === 0) {
+    console.log("FizzBuzz");
+  } else if (n % n1 === 0) {
+    console.log("Fizz");
+  } else if (n % n2 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log("Sorteie outro número");
+  }
+};
+
+fizzBuzz(2, 3);
