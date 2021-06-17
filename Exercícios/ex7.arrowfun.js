@@ -44,3 +44,15 @@ const fizzBuzz = (n1, n2) => {
 };
 
 fizzBuzz(2, 3);
+
+// Não consegui fazer o fatorial e vi na internet como fazia e entendi
+
+let factorial = (x) => {
+  if (x === 0) {
+    return 1;
+  }
+
+  return x * factorial(x - 1);
+};
+
+console.log(factorial(3));
