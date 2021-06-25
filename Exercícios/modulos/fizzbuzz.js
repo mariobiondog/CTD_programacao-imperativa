@@ -1,4 +1,4 @@
-const fizzBuzz = (n1, n2) => {
+exports.fizzBuzz = (n1, n2) => {
   let n = parseInt(Math.random() * 100);
   console.log(n);
   if (n % n1 === 0 && n % n2 === 0) {
@@ -14,4 +14,4 @@ const fizzBuzz = (n1, n2) => {
   }
 };
 
-module.exports = fizzBuzz;
+// poderia ter usado o const lá em cima e dado o module.exports = fizzBuzz;

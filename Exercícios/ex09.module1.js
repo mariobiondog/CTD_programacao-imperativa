@@ -1,8 +1,10 @@
 // Fazendo a requisição do m1
 
-let jogo = require("./modulos/m1");
+let jogo = require("./modulos/fizzbuzz");
 
-jogo(2, 5);
+jogo.fizzBuzz(2, 5);
+
+// Se tivesse exportado com o mudole.exports = fizzBuzz, aí bastaria colocar jogo(2,5) ao invés de jogo.fizzBuzz(2, 5)
 
 // Fazendo a requisição do ex11
 
