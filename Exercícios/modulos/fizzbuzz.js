@@ -15,3 +15,5 @@ exports.fizzBuzz = (n1, n2) => {
 };
 
 // poderia ter usado o const lá em cima e dado o module.exports = fizzBuzz;
+
+
