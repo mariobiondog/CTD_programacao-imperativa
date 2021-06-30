@@ -1,3 +1,4 @@
+
 let microondas = {
   pipoca: function (tempo = 10) {
     if (tempo === 10 * 2) {
@@ -93,3 +94,39 @@ console.log(processar("carne", 3)); // Tempo insuficiente
 console.log(processar("feijao", 12)); // Prato pronto, bom apetite
 console.log(processar("brigadeiro", 8)); // Prato pronto, bom apetite
 console.log(processar("frango", 8)); // Prato inexistente
+
+
+
+//OPÇÃO 2
+
+const opcoes = {
+  pratos: ["Pipoca", "Macarrão"],
+  tempos: [10, 20],
+
+  ligar: function (prato, tempo) {
+    const pratoPedido = opcoes.pratos[prato];
+    const timer = opcoes.tempos[prato];
+
+    if (!pratoPedido) {
+      return "Prato não existe";
+    } else if (tempo >= timer * 2 && tempo < timer * 3) {
+      return "Seu prato queimou";
+    } else if (tempo >= timer * 3) {
+      return "KABUN";
+    } else if (tempo < timer) {
+      return "Tempo insuficiente";
+    } else {
+      return "Seu prato está pronto";
+    }
+  },
+};
+
+console.log(opcoes.ligar(0, 5));
+console.log(opcoes.ligar(0, 10));
+console.log(opcoes.ligar(0, 20));
+console.log(opcoes.ligar(0, 30));
+console.log(opcoes.ligar(1, 5));
+console.log(opcoes.ligar(1, 20));
+console.log(opcoes.ligar(1, 40));
+console.log(opcoes.ligar(1, 60));
+console.log(opcoes.ligar(2, 60));
